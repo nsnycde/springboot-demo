@@ -10,11 +10,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
-
+/**
+ * @author donghao
+ */
 @Configuration
-//mapper路径
-@MapperScan(basePackages = "com.nsn.demo.dal.mapper")
-//启用事物管理 ,在需要事物管理的service类或者方法上使用注解@Transactional
+@MapperScan(basePackages = {"com.nsn.demo.dal.mapper","com.nsn.demo.dal.dao"})
 @EnableTransactionManagement
 public class MybatisConfiguration {
 	

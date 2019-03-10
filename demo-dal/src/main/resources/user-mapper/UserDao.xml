@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nsn.demo.dal.dao.UserDao">
+
+  <select id="selectOne" resultType="com.nsn.demo.dal.po.User">
+    select
+      user_id as userId,
+      user_name as userName,
+      password as password,
+      phone as phone
+    from t_user limit 1
+  </select>
+
+</mapper>

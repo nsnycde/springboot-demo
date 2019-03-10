@@ -27,6 +27,8 @@
 
         <file.upload.version>1.3.1</file.upload.version>
 
+        <lombok.version>1.16.20</lombok.version>
+
         <demo.version>1.0.0</demo.version>
     </properties>
 
@@ -116,6 +118,12 @@
                 <groupId>commons-fileupload</groupId>
                 <artifactId>commons-fileupload</artifactId>
                 <version>${file.upload.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

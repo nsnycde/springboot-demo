@@ -1,6 +1,12 @@
 package com.nsn.demo.dal.po;
 
-public class User {
+import java.io.Serializable;
+
+/**
+ * t_user
+ * @author 
+ */
+public class User implements Serializable {
     private Integer userId;
 
     private String userName;
@@ -8,6 +14,8 @@ public class User {
     private String password;
 
     private String phone;
+
+    private static final long serialVersionUID = 1L;
 
     public Integer getUserId() {
         return userId;
@@ -22,7 +30,7 @@ public class User {
     }
 
     public void setUserName(String userName) {
-        this.userName = userName == null ? null : userName.trim();
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -30,7 +38,7 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
+        this.password = password;
     }
 
     public String getPhone() {
@@ -38,6 +46,6 @@ public class User {
     }
 
     public void setPhone(String phone) {
-        this.phone = phone == null ? null : phone.trim();
+        this.phone = phone;
     }
 }

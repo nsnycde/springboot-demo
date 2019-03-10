@@ -137,7 +137,7 @@
 
 
     <!-- 过滤不必要的日志 -->
-    <logger name="org.springframework" level="DEBUG" />
+    <logger name="org.springframework" level="INFO" />
     <logger name="io.netty" level="WARN" />
     <logger name="ch.qos" level="WARN" />
     <logger name="org.apache" level="WARN" />
@@ -152,11 +152,11 @@
     <logger name="com.alibaba.dubbo" level="INFO" />
     <logger name="com.baidu.disconf" level="INFO" />
     
-    <logger name="com.nsn" level="DEBUG" />
+    <logger name="com.nsn" level="INFO" />
 
 
     <!-- root级别 -->
-    <root level="DEBUG">
+    <root level="INFO">
     
         <!-- 控制台输出  -->
         <appender-ref ref="CONSOLE" />
